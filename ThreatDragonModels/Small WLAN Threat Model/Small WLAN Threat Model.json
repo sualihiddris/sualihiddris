@@ -142,148 +142,6 @@
           {
             "position": {
               "x": 493.75,
-              "y": 394
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Wireless Router"
-              },
-              "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "zIndex": 2,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "18770162-ba36-4151-baef-0dfc8ce4e259"
-                },
-                {
-                  "group": "right",
-                  "id": "92786c7b-ccd4-44e8-b796-ab2d12a06af3"
-                },
-                {
-                  "group": "bottom",
-                  "id": "a6cefd41-c08a-452c-917d-180c5a2f7932"
-                },
-                {
-                  "group": "left",
-                  "id": "3adae94d-1ebb-415f-a25c-a38e9920300b"
-                }
-              ]
-            },
-            "id": "34ab308d-c2d3-4c29-b640-4481343c4212",
-            "data": {
-              "type": "tm.Actor",
-              "name": "Wireless Router",
-              "description": "Wireless access point that authenticates connected devices and manages communication between the WLAN and the internet.",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "providesAuthentication": false,
-              "threats": [
-                {
-                  "id": "ce886a00-5b8e-4690-a85f-1dab1759cfcf",
-                  "title": "Unauthorized Device Impersonation",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Spoofing",
-                  "description": "An attacker impersonates a legitimate wireless device or creates a fake access point (Evil Twin) using a similar network name to deceive users into connecting to a malicious network. This may allow the attacker to intercept communications or steal user credentials.",
-                  "mitigation": "Provide remediatioUse WPA3 or WPA2-AES encryption, strong wireless authentication, and verify the identity of wireless networks. Disable automatic connections to unknown Wi-Fi networks.n for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 3,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "spoofing": 2,
-                "repudiation": 0
-              }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "position": {
-              "x": 493.75,
               "y": 900
             },
             "size": {
@@ -675,6 +533,126 @@
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 495,
+              "y": 261
+            },
+            "size": {
+              "width": 110,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Router"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "459fa7d6-53d2-4080-8474-5828635bf283"
+                },
+                {
+                  "group": "right",
+                  "id": "0907d5c7-4f8e-405a-950e-032c8753c381"
+                },
+                {
+                  "group": "bottom",
+                  "id": "2f62a885-e218-4705-8bd7-c652c3dccaaf"
+                },
+                {
+                  "group": "left",
+                  "id": "abf46d0d-3c10-4677-af3e-43494328917e"
+                }
+              ]
+            },
+            "id": "9378c8bd-7d29-4200-a593-dd3c1516cc01",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Process",
+              "name": "Router",
+              "description": "Provides wireless network connectivity, authenticates connected devices, manages network traffic, and forwards data between the WLAN and the internet.",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
               "threats": []
             }
           }
