@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 490,
-              "y": 710
+              "x": 486.25,
+              "y": 690
             },
             "size": {
               "width": 120,
@@ -167,12 +167,13 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
+                  "name": "block"
                 },
                 "strokeDasharray": null
               }
@@ -188,119 +189,51 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": true,
               "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "3481c327-6a21-418e-8c64-ef5a8169e98f",
-            "source": {
-              "x": 450,
-              "y": 450
-            },
-            "target": {
-              "x": 350,
-              "y": 540
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
+              "protocol": "HTTPS",
+              "threats": [
+                {
+                  "id": "5aefa80a-9997-4957-b317-362dd9466b6e",
+                  "title": "Wireless Traffic Interception",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for thAn attacker intercepts wireless network communications to obtain sensitive information such as login credentials, personal information, and transmitted data. This may occur when weak encryption or insecure communication protocols are used.is threat",
+                  "mitigation": "Enable WPA3 or WPA2-AES encryption, use HTTPS/TLS for secure communication, disable outdated wireless security protocols, and avoid transmitting sensitive information over unsecured networks.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
               }
             },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
             "labels": [
               ""
             ],
-            "id": "397eb306-c717-444d-928d-3ac8af1ae789",
+            "id": "f45c6831-2646-439d-8182-dee6034fc512",
             "source": {
-              "x": 550,
-              "y": 660
+              "cell": "9378c8bd-7d29-4200-a593-dd3c1516cc01",
+              "port": "abf46d0d-3c10-4677-af3e-43494328917e"
             },
             "target": {
-              "x": 550,
-              "y": 530
+              "cell": "e2c8781c-212b-42f0-b0e7-fb64f73b599e",
+              "port": "18770162-ba36-4151-baef-0dfc8ce4e259"
             },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
+            "vertices": [
+              {
+                "x": 420,
+                "y": 340
               }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 11,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "4d3f317c-a746-4b39-a1a0-a9f1d6fde497",
-            "source": {
-              "x": 640,
-              "y": 450
-            },
-            "target": {
-              "x": 740,
-              "y": 530
-            }
+            ]
           },
           {
             "position": {
@@ -538,8 +471,8 @@
           },
           {
             "position": {
-              "x": 495,
-              "y": 261
+              "x": 491.25,
+              "y": 231
             },
             "size": {
               "width": 110,
@@ -550,8 +483,8 @@
                 "text": "Router"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -648,12 +581,113 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "3b3eb711-4608-450d-9540-8bab863cf64b",
+                  "title": "Unauthorized Modification of Network Data",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Provide a description for thiAn attacker modifies data transmitted across the wireless network or changes router configurations without authorization. This may occur after exploiting weak network security or gaining access to the router administration interface.s threat",
+                  "mitigation": "Use HTTPS/TLS to protect data in transit, secure router administration with strong unique credentials, restrict configuration access, and regularly update router firmware.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "f65cc07c-0b66-47bd-811a-092241b962fc",
+                  "title": "Lack of Network Activity Logging",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threA user or attacker performs unauthorized activities on the WLAN and later denies responsibility because the router does not maintain sufficient activity logs to identify the source of the actions.at",
+                  "mitigation": "Enable router activity logging, record authentication attempts and network events, maintain accurate timestamps, and securely retain logs for incident investigation.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 15,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "97a53b7c-5029-4a23-8f90-6c612fd97a93",
+                  "title": "Wireless Traffic Interception",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threatAn attacker intercepts wireless network communications to obtain sensitive information such as login credentials, personal information, and transmitted data. This may occur when weak encryption or insecure communication protocols are used.",
+                  "mitigation": "Enable WPA3 or WPA2-AES encryption, use HTTPS/TLS for secure communication, disable outdated wireless security protocols, and avoid transmitting sensitive information over unsecured networks.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              ""
+            ],
+            "id": "74fd997a-6314-4c42-b1a3-217eaf8ff83f",
+            "source": {
+              "cell": "9378c8bd-7d29-4200-a593-dd3c1516cc01",
+              "port": "0907d5c7-4f8e-405a-950e-032c8753c381"
+            },
+            "target": {
+              "cell": "695c7106-3b90-451f-91bc-292cdf62fa6f",
+              "port": "18770162-ba36-4151-baef-0dfc8ce4e259"
             }
           }
         ],
@@ -662,6 +696,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Dr. Felix L. Aryer",
-    "threatTop": 5
+    "threatTop": 10
   }
 }
