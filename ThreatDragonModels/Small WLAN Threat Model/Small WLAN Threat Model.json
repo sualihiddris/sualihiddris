@@ -164,78 +164,6 @@
             }
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": true,
-              "isEncrypted": true,
-              "isPublicNetwork": false,
-              "protocol": "HTTPS",
-              "threats": [
-                {
-                  "id": "5aefa80a-9997-4957-b317-362dd9466b6e",
-                  "title": "Wireless Traffic Interception",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information disclosure",
-                  "description": "Provide a description for thAn attacker intercepts wireless network communications to obtain sensitive information such as login credentials, personal information, and transmitted data. This may occur when weak encryption or insecure communication protocols are used.is threat",
-                  "mitigation": "Enable WPA3 or WPA2-AES encryption, use HTTPS/TLS for secure communication, disable outdated wireless security protocols, and avoid transmitting sensitive information over unsecured networks.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 10,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              ""
-            ],
-            "id": "f45c6831-2646-439d-8182-dee6034fc512",
-            "source": {
-              "cell": "9378c8bd-7d29-4200-a593-dd3c1516cc01",
-              "port": "abf46d0d-3c10-4677-af3e-43494328917e"
-            },
-            "target": {
-              "cell": "e2c8781c-212b-42f0-b0e7-fb64f73b599e",
-              "port": "18770162-ba36-4151-baef-0dfc8ce4e259"
-            },
-            "vertices": [
-              {
-                "x": 420,
-                "y": 340
-              }
-            ]
-          },
-          {
             "position": {
               "x": 190,
               "y": 540
@@ -612,6 +540,32 @@
                   "new": false,
                   "number": 8,
                   "score": ""
+                },
+                {
+                  "id": "ea925a8e-a76e-4494-9a28-68fb4ab674e2",
+                  "title": "Wireless Network Service Disruption",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Provide a descriptAn attacker sends excessive network traffic or performs wireless deauthentication attacks to overwhelm or disrupt the wireless router. This prevents legitimate users from connecting to the WLAN or accessing internet services.ion for this threat",
+                  "mitigation": "Enable router firewall protections, keep firmware updated, use appropriate wireless protection mechanisms, monitor unusual traffic patterns, and implement network access controls.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "769753be-82b3-4c25-a46c-edbf9a403414",
+                  "title": "Unauthorized Administrative Access",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Elevation of privilege",
+                  "description": "Provide a description for this tAn attacker exploits weak or default router administrator credentials or an unpatched vulnerability to gain unauthorized administrative privileges. This allows the attacker to modify network settings, disable security controls, and potentially monitor connected devices.hreat",
+                  "mitigation": "hange default administrator credentials, use strong unique passwords, enable multi-factor authentication where supported, restrict remote administration, and regularly update router firmware.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -619,8 +573,8 @@
                 "tampering": 1,
                 "repudiation": 1,
                 "informationDisclosure": 0,
-                "denialOfService": 0,
-                "elevationOfPrivilege": 0
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
               }
             }
           },
@@ -696,6 +650,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "Dr. Felix L. Aryer",
-    "threatTop": 10
+    "threatTop": 12
   }
 }
