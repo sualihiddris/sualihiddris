@@ -1,0 +1,18 @@
+{
+  "version": "2.6.2",
+  "release_version": "1.0",
+  "released_at": "2026-02-11",
+  "summary": {
+    "title": "Small WLAN Threat Model",
+    "owner": "Iddrisu Salifu",
+    "description": "This threat model examines a small Wireless Local Area Network (WLAN) consisting of a wireless router or access point, a laptop, and a smartphone connected to the internet. The network allows users to access online services and share information wirelessly.\n\nThe assessment identifies important network assets, potential threats, vulnerabilities, and their possible impact on confidentiality, integrity, and availability. It also proposes security controls to reduce risks such as unauthorized access, eavesdropping, evil twin attacks, denial-of-service attacks, and malware infections.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 1,
+    "reviewer": "Dr. Felix L. Aryer",
+    "threatTop": 0
+  }
+}
