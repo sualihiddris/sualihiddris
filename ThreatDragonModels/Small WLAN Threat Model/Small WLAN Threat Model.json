@@ -13,12 +13,13 @@
     "diagrams": [
       {
         "id": 1,
-        "title": "New STRIDE diagram",
+        "title": "Small WLAN Network Architecture",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [],
+        "description": "This threat model uses the STRIDE methodology to identify and assess security threats affecting a small Wireless Local Area Network (WLAN). STRIDE examines six threat categories: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, and Elevation of Privilege.  The assessment focuses on threats to the wireless router, connected devices, network communications, and user credentials. It evaluates how attackers could impersonate legitimate devices, modify transmitted data, deny users access to network services, expose sensitive information, or gain unauthorized privileges.  Appropriate security controls are proposed to protect the confidentiality, integrity, and availability of the WLAN."
       }
     ],
     "diagramTop": 2,
